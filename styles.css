@@ -1,4 +1,4 @@
-        :root {
+:root {
             --sand-light: #FDF8F3;
             --sand-medium: #F5EBE0;
             --sand-dark: #E8D5C4;
@@ -74,24 +74,24 @@
 
         /* Header Hero Section */
         .hero {
-            min-height: 60vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
-            padding: 2rem 4rem;
+            padding: 3rem 4rem;
             position: relative;
         }
 
         .hero-top {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
+            gap: 2rem;
+            margin-bottom: 3rem;
         }
 
         .hero-left {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .hero-main {
@@ -111,13 +111,13 @@
         }
 
         .profile-photo {
-            width: 100px;
-            height: 100px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--terracotta);
-            box-shadow: 0 6px 20px rgba(229, 164, 145, 0.25),
-                        0 0 0 8px rgba(245, 196, 160, 0.15);
+            border: 4px solid var(--terracotta);
+            box-shadow: 0 8px 25px rgba(229, 164, 145, 0.25),
+                        0 0 0 10px rgba(245, 196, 160, 0.15);
             margin-bottom: 0;
             animation: float 6s ease-in-out infinite;
             transition: transform 0.3s ease;
@@ -134,18 +134,18 @@
 
         h1 {
             font-family: 'Merriweather', serif;
-            font-size: 1.8rem;
+            font-size: 2.4rem;
             font-weight: 700;
             background: linear-gradient(135deg, var(--terracotta) 0%, var(--coral-warm) 50%, var(--ochre) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 0;
+            margin-bottom: 0.5rem;
             letter-spacing: -0.5px;
         }
 
         .subtitle {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: var(--terracotta);
             font-weight: 600;
             margin-bottom: 0;
@@ -155,10 +155,11 @@
 
         .bio {
             max-width: 100%;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--brown-text);
-            margin-bottom: 2rem;
-            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            margin-top: 2rem;
+            line-height: 1.7;
             opacity: 0;
             animation: fadeInUp 0.8s ease 0.5s forwards;
             text-align: left;
@@ -177,7 +178,7 @@
 
         .cta-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
             justify-content: flex-start;
             opacity: 0;
@@ -186,11 +187,11 @@
         }
 
         .btn {
-            padding: 0.8rem 2rem;
+            padding: 0.9rem 2.3rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.05rem;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
