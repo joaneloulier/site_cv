@@ -3,293 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joane Loulier - Recherche d'alternance en Devops et/ou architecture logicielle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Joane Loulier - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-top">
-            <img src="votre-photo.jpg" alt="Photo de profil" class="profile-photo">
-            <div>
-                <h1>Joane Loulier</h1>
-                <p class="subtitle">Recherche d'alternance en Devops et/ou architecture logicielle</p>
-            </div>
-        </div>
-        <div class="hero-main">
-            <div class="bio">
-                <p>
-                    Passionné par l'infrastructure cloud et l'architecture logicielle, je suis à la recherche d'une alternance 
-                    pour mettre en pratique mes compétences en DevOps et contribuer à des projets innovants. 
-                    Mon objectif : créer des systèmes robustes, scalables et automatisés.
-                </p>
-            </div>
-            <div class="cta-buttons">
-                <a href="votre-cv.pdf" class="btn btn-primary" download>
-                    <span>Télécharger mon CV</span>
-                </a>
-                <a href="https://github.com/joaneloulier" target="_blank" class="btn btn-secondary">
-                    <span>Mon GitHub</span>
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <span>Me contacter</span>
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator"></div>
-    </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Skills Section -->
-        <section class="section">
-            <h2 class="section-title">Compétences Techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>DevOps & Infrastructure</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">GitLab CI</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Ansible</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Cloud & Systèmes</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">Apache</span>
-                        <span class="skill-tag">Monitoring</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Langages & Développement</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Architecture Logicielle</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Microservices</span>
-                        <span class="skill-tag">API REST</span>
-                        <span class="skill-tag">Design Patterns</span>
-                        <span class="skill-tag">Clean Architecture</span>
-                        <span class="skill-tag">Event-Driven</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Formation Section -->
-        <section class="section">
-            <h2 class="section-title">Mon Parcours</h2>
-            <div class="treasure-map">
-                <!-- Point de départ -->
-                
-                <!-- Chemin en pointillés SVG qui relie vraiment les cartes et va jusqu'au trésor -->
-                <div class="treasure-path">
-                    <svg>
-                        <!-- Chemin qui passe par chaque carte et va jusqu'au trésor -->
-                        <path d="M 70 110 
-                                 L 180 110 
-                                 Q 200 110, 200 130
-                                 L 200 200
-                                 Q 200 210, 210 215
-                                 L 420 215
-                                 Q 440 215, 450 205
-                                 L 470 160
-                                 Q 480 150, 500 150
-                                 L 740 150
-                                 Q 760 150, 770 165
-                                 L 800 210
-                                 Q 810 220, 820 230
-                                 L 870 310
-                                 Q 880 320, 895 320
-                                 L 960 320" 
-                              stroke="#E5A491" 
-                              stroke-width="3" 
-                              stroke-dasharray="10,10" 
-                              fill="none" 
-                              opacity="0.7"/>
-                        
-                        <!-- Points à chaque étape -->
-                        <circle cx="180" cy="110" r="8" fill="#E5A491" opacity="0.8"/>
-                        <circle cx="450" cy="205" r="8" fill="#E5A491" opacity="0.8"/>
-                        <circle cx="770" cy="165" r="8" fill="#E5A491" opacity="0.8"/>
-                        <circle cx="960" cy="320" r="12" fill="#F0D18A" opacity="0.9"/>
-                    </svg>
-                </div>
-
-                <!-- Cartes de formation positionnées le long du chemin -->
-                <div class="formation-card">
-                    <h3>DUT / BTS Informatique</h3>
-                    <span class="date">2021 - 2023</span>
-                    <p><strong>Établissement</strong></p>
-                    <ul>
-                        <li>Développement logiciel</li>
-                        <li>Bases de données</li>
-                        <li>Réseaux</li>
-                    </ul>
-                </div>
-
-                <div class="formation-card">
-                    <h3>Licence Pro DevOps</h3>
-                    <span class="date">2023 - 2024</span>
-                    <p><strong>École / Université</strong></p>
-                    <ul>
-                        <li>Infrastructure cloud</li>
-                        <li>Conteneurisation</li>
-                        <li>CI/CD</li>
-                    </ul>
-                </div>
-
-                <div class="formation-card">
-                    <h3>Master Architecture</h3>
-                    <span class="date">2024 - 2025</span>
-                    <p><strong>École d'ingénieur</strong></p>
-                    <ul>
-                        <li>Microservices</li>
-                        <li>Architecture distribuée</li>
-                        <li>Sécurité</li>
-                    </ul>
-                </div>
-
-                <!-- Trésor final -->
-                <div class="treasure-chest">
-                    <div class="icon">✕</div>
-                    <div class="text">Alternance chez vous ?</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h2 class="section-title">Expériences & Projets</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Stage DevOps - Entreprise XYZ</h3>
-                    <span class="timeline-date">Juin 2024 - Août 2024</span>
-                    <div class="timeline-content">
-                        <ul>
-                            <li>Mise en place d'une pipeline CI/CD avec GitLab CI</li>
-                            <li>Containerisation d'applications avec Docker</li>
-                            <li>Déploiement sur cluster Kubernetes</li>
-                            <li>Monitoring et alerting avec Prometheus/Grafana</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <h3>Projet Académique - Architecture Microservices</h3>
-                    <span class="timeline-date">2024</span>
-                    <div class="timeline-content">
-                        <p>Conception et développement d'une application e-commerce en architecture microservices</p>
-                        <ul>
-                            <li>Spring Boot, Docker, Kubernetes</li>
-                            <li>API Gateway et service discovery</li>
-                            <li>Base de données distribuée</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Portfolio Section -->
-        <section class="section">
-            <h2 class="section-title">Projets Personnels</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Infrastructure as Code</h3>
-                        <p>Automatisation complète du déploiement d'infrastructure cloud avec Terraform et Ansible.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Terraform</span>
-                            <span class="tech-badge">AWS</span>
-                            <span class="tech-badge">Ansible</span>
-                        </div>
-                        <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">
-                            Voir sur GitHub →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Pipeline CI/CD Avancé</h3>
-                        <p>Pipeline complète avec tests automatisés, analyse de code, et déploiement automatique.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Jenkins</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">SonarQube</span>
-                        </div>
-                        <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">
-                            Voir sur GitHub →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Monitoring Dashboard</h3>
-                        <p>Tableau de bord de monitoring en temps réel pour infrastructure cloud.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Prometheus</span>
-                            <span class="tech-badge">Grafana</span>
-                            <span class="tech-badge">Node.js</span>
-                        </div>
-                        <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">
-                            Voir sur GitHub →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section" id="contact">
-            <div class="contact">
-                <h2>Restons en contact</h2>
-                <p>N'hésitez pas à me contacter pour discuter d'opportunités d'alternance ou de projets collaboratifs !</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span>Email</span>
-                        <a href="mailto:votre.email@example.com">votre.email@example.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span>LinkedIn</span>
-                        <a href="https://linkedin.com/in/votre-profil" target="_blank">Mon profil</a>
-                    </div>
-                    <div class="contact-item">
-                        <span>Localisation</span>
-                        <span style="color: var(--brown-text);">Votre Ville, France</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Ocean background -->
+    <div class="ocean-bg"></div>
+    <div class="wave-layer wave-1">
+        <svg viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0,60 C400,120 800,0 1200,60 C1600,120 2000,0 2400,60 L2400,120 L0,120 Z" fill="#1a6b8a"/>
+        </svg>
+    </div>
+    <div class="wave-layer wave-2">
+        <svg viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0,80 C300,20 600,100 1200,40 C1800,100 2100,20 2400,80 L2400,120 L0,120 Z" fill="#2a94b8"/>
+        </svg>
     </div>
 
-    <!-- Footer -->
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#accueil" class="nav-logo">
+                Joane Loulier
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences Techniques</a></li>
+                <li><a href="#experience">Expérience Professionnelle</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#projets">Projets Personnels</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-photo">👩‍💻</div>
+                <div class="hero-cta">
+                    <a href="cv.pdf" class="btn btn-primary" target="_blank">Mon CV (PDF)</a>
+                    <a href="https://github.com/votre-username" class="btn btn-secondary" target="_blank">🐙 GitHub</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1>Joane Loulier</h1>
+                <p class="hero-subtitle">Développeuse — DevOps & Architecture Logicielle</p>
+                <p class="hero-pitch">
+                    Étudiante à Centrale Méditerranée, je suis passionnée par le développement informatique, 
+                    aussi bien côté DevOps que conception et architecture logicielle. 
+                    Je recherche une alternance qui me permettra de mettre en pratique mes compétences 
+                    techniques tout en continuant à apprendre au sein d'une équipe engagée.
+                    <br>
+                    <a href="mailto:joane.loulier@centrale-med.fr" class="email-link">📧 joane.loulier@centrale-med.fr</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-hint"><span>↓</span></div>
+
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="skills-ocean">
+            <div class="skill-cluster">
+                <h3>🛠️ Langages</h3>
+                <div class="bubbles">
+                    <span class="bubble">Python</span>
+                    <span class="bubble">Java</span>
+                </div>
+            </div>
+            <div class="skill-cluster">
+                <h3>⚙️ DevOps</h3>
+                <div class="bubbles">
+                    <span class="bubble">Docker</span>
+                    <span class="bubble">CI/CD (pytest)</span>
+                    <span class="bubble">Linux</span>
+                    <span class="bubble">Git</span>
+                </div>
+            </div>
+            <div class="skill-cluster">
+                <h3>🏗️ Architecture</h3>
+                <div class="bubbles">
+                    <span class="bubble">Design Patterns</span>
+                    <span class="bubble">API REST (FastAPI)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPÉRIENCE PROFESSIONNELLE -->
+    <section class="section" id="experience">
+        <h2 class="section-title">Expérience Professionnelle</h2>
+        <div class="experience-list">
+            <div class="exp-card">
+                <div class="exp-date">Été 2024</div>
+                <div class="exp-content">
+                    <h3>Stage Développement</h3>
+                    <p class="exp-company">Nom de l'entreprise</p>
+                    <p class="exp-desc">Description des missions réalisées, technologies utilisées et résultats obtenus.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-card">
+                <div class="exp-date">Été 2023</div>
+                <div class="exp-content">
+                    <h3>Stage / Projet en entreprise</h3>
+                    <p class="exp-company">Nom de l'entreprise</p>
+                    <p class="exp-desc">Description des missions réalisées, technologies utilisées et résultats obtenus.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION - CARTE AU TRÉSOR -->
+    <section class="section" id="formation">
+        <h2 class="section-title">Formation</h2>
+        <div class="treasure-map" id="treasureMap">
+
+            <!-- SVG path drawn by JS to connect cards to the treasure -->
+            <svg class="map-path-svg" id="mapSvg"></svg>
+
+            <!-- Formation cards -->
+            <div class="map-stops" id="mapStops">
+                <div class="map-card" id="card0">
+                    <div class="year">2020 – 2022</div>
+                    <h4>Classe Préparatoire MPSI / MP</h4>
+                    <p>Mathématiques, physique et sciences de l'ingénieur. Rigueur scientifique et méthode de travail.</p>
+                </div>
+                <div class="map-card" id="card1">
+                    <div class="year">2022 – 2025</div>
+                    <h4>Centrale Méditerranée</h4>
+                    <p>École d'ingénieur généraliste. Spécialisation informatique, développement et systèmes.</p>
+                </div>
+                <div class="map-card" id="card2">
+                    <div class="year">2025 – 2026</div>
+                    <h4>Alternance Développement</h4>
+                    <p>DevOps ou Architecture Logicielle. Mise en pratique en entreprise.</p>
+                </div>
+            </div>
+
+            <!-- Treasure -->
+            <div class="treasure-destination" id="treasureX">
+                <span class="treasure-icon">✖️</span>
+                <span class="treasure-label">Alternance chez vous ?</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+        <h2 class="section-title">Projets Personnels</h2>
+        <div class="projects-grid">
+            <div class="fish-card">
+                <span class="fish-emoji">🐠</span>
+                <h3>Infrastructure as Code</h3>
+                <p>Automatisation du déploiement d'infrastructure cloud avec Terraform et Ansible.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Ansible</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
+            <div class="fish-card">
+                <span class="fish-emoji">🐡</span>
+                <h3>Pipeline CI/CD Avancé</h3>
+                <p>Pipeline complète avec tests automatisés, analyse de code et déploiement continu.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Jenkins</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">SonarQube</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
+            <div class="fish-card">
+                <span class="fish-emoji">🐟</span>
+                <h3>Monitoring Dashboard</h3>
+                <p>Tableau de bord de monitoring en temps réel pour infrastructure cloud.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <h2>Restons en contact</h2>
+        <p>N'hésitez pas à me contacter pour discuter d'opportunités d'alternance ou de projets collaboratifs !</p>
+        <div class="contact-cards">
+            <a href="mailto:joane.loulier@centrale-med.fr" class="contact-card">
+                <div>
+                    <div class="label">Email</div>
+                    <div class="value">joane.loulier@centrale-med.fr</div>
+                </div>
+            </a>
+            <a href="https://linkedin.com/in/votre-profil" target="_blank" class="contact-card">
+                <div>
+                    <div class="label">LinkedIn</div>
+                    <div class="value">Mon profil</div>
+                </div>
+            </a>
+            <a href="https://github.com/votre-username" target="_blank" class="contact-card">
+                <div>
+                    <div class="label">GitHub</div>
+                    <div class="value">Mes projets</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Votre Nom - Tous droits réservés</p>
-        <p style="opacity: 0.7; margin-top: 0.5rem;">Fait avec passion</p>
+        <p>&copy; 2025 Joane Loulier — Fait avec passion 🌊</p>
     </footer>
+
+    <script>
+        // ======== NAV SCROLL EFFECT ========
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 30);
+        });
+
+        // ======== ACTIVE NAV LINK ========
+        const sections = document.querySelectorAll('section[id], .hero[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                const top = s.offsetTop - 120;
+                if (window.scrollY >= top) current = s.getAttribute('id');
+            });
+            navLinks.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+        });
+
+        // ======== TREASURE MAP: DRAW DASHED PATH FROM CARDS TO TREASURE ========
+        function drawTreasurePath() {
+            const map = document.getElementById('treasureMap');
+            const svg = document.getElementById('mapSvg');
+            const cards = document.querySelectorAll('.map-card');
+            const treasure = document.getElementById('treasureX');
+
+            if (!map || !svg || cards.length === 0 || !treasure) return;
+
+            const mapRect = map.getBoundingClientRect();
+
+            // Get center-bottom of each card relative to the map
+            function getCardAnchor(card, position) {
+                const r = card.getBoundingClientRect();
+                if (position === 'bottom') {
+                    return {
+                        x: r.left + r.width / 2 - mapRect.left,
+                        y: r.bottom - mapRect.top
+                    };
+                }
+                if (position === 'top') {
+                    return {
+                        x: r.left + r.width / 2 - mapRect.left,
+                        y: r.top - mapRect.top
+                    };
+                }
+                if (position === 'right') {
+                    return {
+                        x: r.right - mapRect.left,
+                        y: r.top + r.height / 2 - mapRect.top
+                    };
+                }
+                // center
+                return {
+                    x: r.left + r.width / 2 - mapRect.left,
+                    y: r.top + r.height / 2 - mapRect.top
+                };
+            }
+
+            // Get treasure anchor (center of treasure icon)
+            const tRect = treasure.getBoundingClientRect();
+            const treasureIcon = treasure.querySelector('.treasure-icon');
+            const tiRect = treasureIcon ? treasureIcon.getBoundingClientRect() : tRect;
+            const treasurePoint = {
+                x: tiRect.left + tiRect.width / 2 - mapRect.left,
+                y: tiRect.top + tiRect.height / 2 - mapRect.top
+            };
+
+            // Build waypoints: right side of card 0 → top of card 1 → right of card 2 → treasure
+            const p0 = getCardAnchor(cards[0], 'right');
+            const p1 = getCardAnchor(cards[1], 'top');
+            const p2 = getCardAnchor(cards[2], 'right');
+            const pT = treasurePoint;
+
+            // Build a smooth path using quadratic bezier curves
+            const midA = { x: (p0.x + p1.x) / 2, y: p0.y };
+            const midB = { x: p2.x, y: (p1.y + p2.y) / 2 };
+            const midC = { x: (p2.x + pT.x) / 2, y: p2.y };
+
+            const d = `M ${p0.x} ${p0.y}
+                       Q ${midA.x} ${midA.y - 30}, ${p1.x} ${p1.y}
+                       Q ${midB.x + 40} ${midB.y}, ${p2.x} ${p2.y}
+                       Q ${midC.x + 30} ${midC.y + 20}, ${pT.x} ${pT.y}`;
+
+            svg.innerHTML = '';
+            svg.setAttribute('viewBox', `0 0 ${mapRect.width} ${mapRect.height}`);
+            svg.style.width = mapRect.width + 'px';
+            svg.style.height = mapRect.height + 'px';
+
+            // Shadow path (thicker, lighter)
+            const shadow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            shadow.setAttribute('d', d);
+            shadow.setAttribute('stroke', '#c4a882');
+            shadow.setAttribute('stroke-width', '6');
+            shadow.setAttribute('stroke-dasharray', '12,12');
+            shadow.setAttribute('fill', 'none');
+            shadow.setAttribute('opacity', '0.25');
+            shadow.setAttribute('stroke-linecap', 'round');
+            svg.appendChild(shadow);
+
+            // Main dashed path
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', d);
+            path.setAttribute('stroke', '#c97064');
+            path.setAttribute('stroke-width', '3.5');
+            path.setAttribute('stroke-dasharray', '10,8');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.75');
+            path.setAttribute('stroke-linecap', 'round');
+            svg.appendChild(path);
+
+            // Draw dots at each card position
+            [p0, p1, p2].forEach(pt => {
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', pt.x);
+                circle.setAttribute('cy', pt.y);
+                circle.setAttribute('r', '7');
+                circle.setAttribute('fill', '#c97064');
+                circle.setAttribute('opacity', '0.6');
+                svg.appendChild(circle);
+            });
+
+            // Gold star at treasure
+            const star = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            star.setAttribute('cx', pT.x);
+            star.setAttribute('cy', pT.y);
+            star.setAttribute('r', '9');
+            star.setAttribute('fill', '#d4af37');
+            star.setAttribute('opacity', '0.7');
+            svg.appendChild(star);
+        }
+
+        // Draw on load and resize
+        window.addEventListener('load', () => {
+            setTimeout(drawTreasurePath, 100);
+        });
+        window.addEventListener('resize', drawTreasurePath);
+    </script>
 </body>
 </html>
