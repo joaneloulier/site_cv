@@ -147,6 +147,20 @@ nav.scrolled {
     text-align: center;
 }
 
+/* ── Photo circulaire ── */
+.hero-left img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin: 0 auto 1.2rem;
+    border: 5px solid white;
+    box-shadow: 0 8px 30px rgba(26, 107, 138, 0.25);
+}
+
+/* Conservé pour rétrocompatibilité si utilisé ailleurs */
 .hero-photo {
     width: 170px;
     height: 170px;
