@@ -1,214 +1,405 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joane Loulier — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joane Loulier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="logo">Joane Loulier</a>
-      <div class="nav-links">
-        <a href="#competences">Compétences</a>
-        <a href="#experience">Expérience</a>
-        <a href="#formation">Formation</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact" class="nav-cta">📧 Contact</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="accueil">
-    <div class="hero-bubbles" id="bubbles"></div>
-    <div class="hero-content">
-      <span class="hero-badge">🌊 Recherche alternance — Septembre 2026</span>
-      <h1>Joane Loulier</h1>
-      <p>Étudiante à Centrale Méditerranée, je recherche une alternance informatique pour ma troisième et dernière année en spécialisation Informatique. Ayant toujours eu une appétence pour l'informatique et le développement, j'ai réalisé un logiciel de calcul scientifique dans le cadre de mon stage de césure et désire acquérir plus d'expérience dans un domaine que j'ai trouvé très stimulant.</p>
-      <div class="hero-actions">
-        <a href="/cdn-cgi/l/email-protection#87ede8e6e9e2a9ebe8f2ebeee2f5c7e4e2e9f3f5e6ebe2aaeae2e3a9e1f5" class="btn btn-primary">📧 <span class="__cf_email__" data-cfemail="58323739363d7634372d34313d2a183b3d362c2a39343d75353d3c763e2a">[email&#160;protected]</span></a>
-        <a href="https://github.com/joaneloulier" class="btn btn-ghost" target="_blank">🐙 GitHub</a>
-      </div>
+    <!-- Ocean background -->
+    <div class="ocean-bg"></div>
+    <div class="wave-layer wave-1">
+        <svg viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0,60 C400,120 800,0 1200,60 C1600,120 2000,0 2400,60 L2400,120 L0,120 Z" fill="#1a6b8a"/>
+        </svg>
     </div>
-    <div class="scroll-hint">↓</div>
-  </section>
-
-  <!-- COMPÉTENCES -->
-  <section id="competences">
-    <div class="section-inner">
-      <span class="section-label">Savoir-faire</span>
-      <h2 class="section-title">Compétences Techniques</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon lang">🛠️</div>
-          <h3>Langages</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Java</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon devops">⚙️</div>
-          <h3>DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">CI/CD (pytest)</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon archi">🏗️</div>
-          <h3>Architecture</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Design Patterns</span>
-            <span class="skill-tag">API REST (FastAPI)</span>
-          </div>
-        </div>
-      </div>
+    <div class="wave-layer wave-2">
+        <svg viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0,80 C300,20 600,100 1200,40 C1800,100 2100,20 2400,80 L2400,120 L0,120 Z" fill="#2a94b8"/>
+        </svg>
     </div>
-  </section>
 
-  <!-- EXPÉRIENCE -->
-  <section id="experience">
-    <div class="section-inner">
-      <span class="section-label">Parcours</span>
-      <h2 class="section-title">Expérience Professionnelle</h2>
-      <div class="timeline">
-        <!-- Stage CEA -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Septembre 2025 — Février 2026</div>
-          <div class="timeline-card">
-            <h3>Stage de Développement Informatique pour logiciel de calcul physique</h3>
-            <div class="company">CEA de Cadarache · 6 mois</div>
-            <p>Réalisation d'un logiciel en Python avec interface PySide6 / PyQt. Apprentissage Programmation Orientée Objet, gestion des signaux / slots de PyQt et de l'interface en général, notions sur les design patterns de logiciels, tests unitaires et gestion Git. Moins de 5 % d'erreurs avec un logiciel de calcul multiphysique professionnel Davis.</p>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Python</span>
-              <span class="timeline-tag">PySide6 / PyQt</span>
-              <span class="timeline-tag">Pytest</span>
-              <span class="timeline-tag">Pyinstaller</span>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#accueil" class="nav-logo">
+                Joane Loulier
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences Techniques</a></li>
+                <li><a href="#experience">Expérience Professionnelle</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#projets">Projets Personnels</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="photo_cv_joane.jpg" alt= "photo cv Joane Loulier">
+                <div class="hero-cta">
+                    <a href="cv.pdf" class="btn btn-primary" target="_blank">Mon CV (PDF)</a>
+                    <a href="https://github.com/joaneloulier" class="btn btn-secondary" target="_blank">🐙 GitHub</a>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Stage Madrid -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Février — Juillet 2025</div>
-          <div class="timeline-card">
-            <h3>Stage au laboratoire de Magnétisme appliqué de Madrid</h3>
-            <div class="company">Instituto de Magnetismo Aplicado — Universidad Complutense de Madrid · 6 mois</div>
-            <p>Étude de micro fils ferromagnétiques dans un environnement tout espagnol et anglais. Modélisation de plaques en 3D avec le logiciel Blender et impression. Réalisation d'un capteur de viscosité avec des structures ordonnées de microfils ferromagnétiques amorphes.</p>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Python</span>
-              <span class="timeline-tag">Autonomie</span>
-              <span class="timeline-tag">Blender</span>
-              <span class="timeline-tag">Impression 3D</span>
+            <div class="hero-right">
+                <h1>Joane Loulier</h1>
+                <p class="hero-subtitle">Recherche d'alternance DevOps et/ou architecture logicielle pour septembre 2026</p>
+                <p class="hero-pitch">
+                    Etudiante à Centrale Méditerranée, je recherche une alternance informatique pour 
+                    ma troisième et dernière année en spécialisation Informatique.
+                    Ayant toujours eu une appétence pour l'informatique et le développement,
+                    j'ai réalisé un logiciel de calcul scientifique dans le cadre de mon stage de césure et désire
+                    acquérir plus d'expérience dans un domaine que j'ai trouvé très stimulant.
+                    <br>
+                    <a href="mailto:joane.loulier@centrale-med.fr" class="email-link">📧 joane.loulier@centrale-med.fr</a>
+                </p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FORMATION -->
-  <section id="formation">
-    <div class="section-inner">
-      <span class="section-label">Études</span>
-      <h2 class="section-title">Formation</h2>
-      <div class="formation-grid">
-        <div class="formation-card formation-highlight">
-          <div class="formation-year">2023 — …</div>
-          <div>
-            <h3>Diplôme d'ingénieur généraliste · Spécialisation Informatique</h3>
-            <div class="school">Centrale Méditerranée</div>
-            <span class="alternance-badge">✖️ Alternance chez vous ?</span>
-          </div>
+    <div class="scroll-hint"><span>↓</span></div>
+
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="skills-ocean">
+            <div class="skill-cluster">
+                <h3>🛠️ Langages</h3>
+                <div class="bubbles">
+                    <span class="bubble">Python</span>
+                    <span class="bubble">Java</span>
+                </div>
+            </div>
+            <div class="skill-cluster">
+                <h3>⚙️ DevOps</h3>
+                <div class="bubbles">
+                    <span class="bubble">Docker</span>
+                    <span class="bubble">CI/CD (pytest)</span>
+                    <span class="bubble">Linux</span>
+                    <span class="bubble">Git</span>
+                </div>
+            </div>
+            <div class="skill-cluster">
+                <h3>🏗️ Architecture</h3>
+                <div class="bubbles">
+                    <span class="bubble">Design Patterns</span>
+                    <span class="bubble">API REST (FastAPI)</span>
+                </div>
+            </div>
         </div>
-        <div class="formation-card">
-          <div class="formation-year">2020 – 2023</div>
-          <div>
-            <h3>Classes prépa PCSI — PSI*</h3>
-            <div class="school">Lycée Joffre — Montpellier</div>
-            <p>Années de classes préparatoires qui m'ont appris le sérieux et la rigueur.</p>
-          </div>
+    </section>
+
+    <!-- EXPÉRIENCE PROFESSIONNELLE -->
+    <section class="section" id="experience">
+        <h2 class="section-title">Expérience Professionnelle</h2>
+        <div class="experience-list">
+            <div class="exp-card">
+                <div class="exp-date">Septembre 2025 - Février 2026</div>
+                <div class="exp-content">
+                    <h3>Stage 6 mois de Développement Informatique pour logiciel de calcul physique</h3>
+                    <p class="exp-company">CEA de Cadarache</p>
+                    <p class="exp-desc">Réalisation d'un logiciel en Python avec interface PySide6 / PyQt.
+                        Apprentissage Programmation Orientée Objet, gestion des signaux / slots de PyQt et de l'interface en général,
+                        notions sur les design patterns de logiciels, tests unitaires et gestion Git. 
+                        <strong>Moins de 5% d'erreurs avec un logiciel de calcul multiphysique professionnel Davis.</strong>
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PySide6/PyQt</span>
+                        <span class="tech-tag">Pytest</span>
+                        <span class="tech-tag">Pyinstaller</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-card">
+                <div class="exp-date">Février - Juillet 2025</div>
+                <div class="exp-content">
+                    <h3>Stage 6 mois au laboratoire de Magnétisme appliqué de Madrid</h3>
+                    <p class="exp-company">Instituto de Magnetismo Aplicado - Universidad Complutense de Madrid</p>
+                    <p class="exp-desc">Etude de micro fils ferromagnétiques dans un environnement tout espagnol et anglais.
+                        Modélisation de plaques en 3D avec le logiciel Blender et impression. Réalisation d'un capteur de 
+                        viscosité avec des structures ordonnées de microfils ferromagnétiques amorphes.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Autonomie</span>
+                        <span class="tech-tag">Blender</span>
+                        <span class="tech-tag">Impression 3D</span>
+                    </div>
+                </div>
+                <div class="exp-card">
+                <div class="exp-date">Février - Juillet 2025</div>
+                <div class="exp-content">
+                    <h3>Stage 6 mois au laboratoire de Magnétisme appliqué de Madrid</h3>
+                    <p class="exp-company">Instituto de Magnetismo Aplicado - Universidad Complutense de Madrid</p>
+                    <p class="exp-desc">Etude de micro fils ferromagnétiques dans un environnement tout espagnol et anglais.
+                        Modélisation de plaques en 3D avec le logiciel Blender et impression. Réalisation d'un capteur de 
+                        viscosité avec des structures ordonnées de microfils ferromagnétiques amorphes.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Autonomie</span>
+                        <span class="tech-tag">Blender</span>
+                        <span class="tech-tag">Impression 3D</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="formation-card">
-          <div class="formation-year">2020</div>
-          <div>
-            <h3>Baccalauréat scientifique mention Très Bien</h3>
-            <p>Physique, SVT, Maths et spécialité Mathématiques.</p>
-          </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section class="section" id="formation">
+        <h2 class="section-title">Formation</h2>
+        <div class="treasure-map" id="treasureMap">
+
+            <!-- SVG path drawn by JS to connect cards to the treasure -->
+            <svg class="map-path-svg" id="mapSvg"></svg>
+
+            <!-- Formation cards -->
+            <div class="map-stops" id="mapStops">
+                <div class="map-card" id="card0">
+                    <div class="year">2020</div>
+                    <h4>Baccalauréat scientifique mention TB</h4>
+                    <p>Première et terminale scientifique, physique, svt, maths et spécialité mathématiques.</p>
+                </div>
+                <div class="map-card" id="card1">
+                    <div class="year">2020 – 2023</div>
+                    <h4>Classes prépa PCSI - PSI*</h4>
+                    <strong>Lycée Joffre - Montpellier</strong>
+                    <p>Années de classes préparatoires qui m'ont appris, le sérieux, la rigueur et qui ont </p>
+                </div>
+                <div class="map-card" id="card2">
+                    <div class="year">2023 – En cours</div>
+                    <h4>Diplôme d'ingénieur généraliste à Spécialisation Informatique et dev</h4>
+                    <p>Centrale Méditerranée</p>
+                </div>
+            </div>
+
+            <!-- Treasure -->
+            <div class="treasure-destination" id="treasureX">
+                <span class="treasure-icon">✖️</span>
+                <span class="treasure-label">Alternance chez vous ?</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJETS -->
-  <section id="projets">
-    <div class="section-inner">
-      <span class="section-label">Side projects</span>
-      <h2 class="section-title">Projets Personnels</h2>
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-emoji">🎲</div>
-          <h3>Trouve le nombre</h3>
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+        <h2 class="section-title">Projets Personnels</h2>
+        <div class="projects-grid">
+            <div class="fish-card">
+                <span class="fish-emoji">🐠</span>
+                <h3>Infrastructure as Code</h3>
+                <p>Automatisation du déploiement d'infrastructure cloud avec Terraform et Ansible.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Ansible</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
+            <div class="fish-card">
+                <span class="fish-emoji">🐡</span>
+                <h3>Pipeline CI/CD Avancé</h3>
+                <p>Pipeline complète avec tests automatisés, analyse de code et déploiement continu.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Jenkins</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">SonarQube</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
+            <div class="fish-card">
+                <span class="fish-emoji">🐟</span>
+                <h3>Monitoring Dashboard</h3>
+                <p>Tableau de bord de monitoring en temps réel pour infrastructure cloud.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+                <a href="https://github.com/votre-username/projet" target="_blank" class="project-link">Voir sur GitHub →</a>
+            </div>
         </div>
-        <div class="project-body">
-          <p>Petit jeu de devinette d'un nombre aléatoire entre 1 et 100, avec interface graphique PySide6. Projet personnel pour approfondir les compétences acquises en stage sur l'architecture d'applications Qt.</p>
+    </section>
 
-          <div class="project-tags-row">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">PySide6</span>
-            <span class="project-tag">Qt Framework</span>
-            <span class="project-tag">Packaging pip</span>
-          </div>
-
-          <a href="https://github.com/joaneloulier/trouve-le-nombre" class="project-link" target="_blank">Voir sur GitHub →</a>
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <h2>Restons en contact</h2>
+        <p>N'hésitez pas à me contacter pour discuter d'opportunités d'alternance ou de projets collaboratifs !</p>
+        <div class="contact-cards">
+            <a href="mailto:joane.loulier@centrale-med.fr" class="contact-card">
+                <div>
+                    <div class="label">Email</div>
+                    <div class="value">joane.loulier@centrale-med.fr</div>
+                </div>
+            </a>
+            <a href="https://linkedin.com/in/votre-profil" target="_blank" class="contact-card">
+                <div>
+                    <div class="label">LinkedIn</div>
+                    <div class="value">Mon profil</div>
+                </div>
+            </a>
+            <a href="https://github.com/joaneloulier" target="_blank" class="contact-card">
+                <div>
+                    <div class="label">GitHub</div>
+                    <div class="value">Mes projets</div>
+                </div>
+            </a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-inner">
-      <span class="section-label">Échangeons</span>
-      <h2 class="section-title">Restons en contact</h2>
-      <p>N'hésitez pas à me contacter pour discuter d'opportunités d'alternance ou de projets collaboratifs !</p>
-      <div class="contact-grid">
-        <a href="/cdn-cgi/l/email-protection#1d77727c7378337172687174786f5d7e7873696f7c717830707879337b6f" class="contact-card">
-          <div class="contact-label">Email</div>
-          <div class="contact-value"><span class="__cf_email__" data-cfemail="b1dbded0dfd49fdddec4ddd8d4c3f1d2d4dfc5c3d0ddd49cdcd4d59fd7c3">[email&#160;protected]</span></div>
-        </a>
-        <a href="#" class="contact-card">
-          <div class="contact-label">LinkedIn</div>
-          <div class="contact-value">Mon profil</div>
-        </a>
-        <a href="https://github.com/joaneloulier" class="contact-card" target="_blank">
-          <div class="contact-label">GitHub</div>
-          <div class="contact-value">Mes projets</div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Joane Loulier — Fait avec passion 🌊</p>
+    </footer>
 
-  <footer>© 2025 Joane Loulier — Fait avec passion 🌊</footer>
+    <script>
+        // ======== NAV SCROLL EFFECT ========
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 30);
+        });
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Navbar scroll
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-    });
+        // ======== ACTIVE NAV LINK ========
+        const sections = document.querySelectorAll('section[id], .hero[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
 
-    // Bubbles
-    const container = document.getElementById('bubbles');
-    for (let i = 0; i < 14; i++) {
-      const b
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                const top = s.offsetTop - 120;
+                if (window.scrollY >= top) current = s.getAttribute('id');
+            });
+            navLinks.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+        });
+
+        // ======== TREASURE MAP: DRAW DASHED PATH FROM CARDS TO TREASURE ========
+        function drawTreasurePath() {
+            const map = document.getElementById('treasureMap');
+            const svg = document.getElementById('mapSvg');
+            const cards = document.querySelectorAll('.map-card');
+            const treasure = document.getElementById('treasureX');
+
+            if (!map || !svg || cards.length === 0 || !treasure) return;
+
+            const mapRect = map.getBoundingClientRect();
+
+            // Get center-bottom of each card relative to the map
+            function getCardAnchor(card, position) {
+                const r = card.getBoundingClientRect();
+                if (position === 'bottom') {
+                    return {
+                        x: r.left + r.width / 2 - mapRect.left,
+                        y: r.bottom - mapRect.top
+                    };
+                }
+                if (position === 'top') {
+                    return {
+                        x: r.left + r.width / 2 - mapRect.left,
+                        y: r.top - mapRect.top
+                    };
+                }
+                if (position === 'right') {
+                    return {
+                        x: r.right - mapRect.left,
+                        y: r.top + r.height / 2 - mapRect.top
+                    };
+                }
+                // center
+                return {
+                    x: r.left + r.width / 2 - mapRect.left,
+                    y: r.top + r.height / 2 - mapRect.top
+                };
+            }
+
+            // Get treasure anchor (center of treasure icon)
+            const tRect = treasure.getBoundingClientRect();
+            const treasureIcon = treasure.querySelector('.treasure-icon');
+            const tiRect = treasureIcon ? treasureIcon.getBoundingClientRect() : tRect;
+            const treasurePoint = {
+                x: tiRect.left + tiRect.width / 2 - mapRect.left,
+                y: tiRect.top + tiRect.height / 2 - mapRect.top
+            };
+
+            // Build waypoints: right side of card 0 → top of card 1 → right of card 2 → treasure
+            const p0 = getCardAnchor(cards[0], 'right');
+            const p1 = getCardAnchor(cards[1], 'top');
+            const p2 = getCardAnchor(cards[2], 'right');
+            const pT = treasurePoint;
+
+            // Build a smooth path using quadratic bezier curves
+            const midA = { x: (p0.x + p1.x) / 2, y: p0.y };
+            const midB = { x: p2.x, y: (p1.y + p2.y) / 2 };
+            const midC = { x: (p2.x + pT.x) / 2, y: p2.y };
+
+            const d = `M ${p0.x} ${p0.y}
+                       Q ${midA.x} ${midA.y - 30}, ${p1.x} ${p1.y}
+                       Q ${midB.x + 40} ${midB.y}, ${p2.x} ${p2.y}
+                       Q ${midC.x + 30} ${midC.y + 20}, ${pT.x} ${pT.y}`;
+
+            svg.innerHTML = '';
+            svg.setAttribute('viewBox', `0 0 ${mapRect.width} ${mapRect.height}`);
+            svg.style.width = mapRect.width + 'px';
+            svg.style.height = mapRect.height + 'px';
+
+            // Shadow path (thicker, lighter)
+            const shadow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            shadow.setAttribute('d', d);
+            shadow.setAttribute('stroke', '#c4a882');
+            shadow.setAttribute('stroke-width', '6');
+            shadow.setAttribute('stroke-dasharray', '12,12');
+            shadow.setAttribute('fill', 'none');
+            shadow.setAttribute('opacity', '0.25');
+            shadow.setAttribute('stroke-linecap', 'round');
+            svg.appendChild(shadow);
+
+            // Main dashed path
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', d);
+            path.setAttribute('stroke', '#c97064');
+            path.setAttribute('stroke-width', '3.5');
+            path.setAttribute('stroke-dasharray', '10,8');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.75');
+            path.setAttribute('stroke-linecap', 'round');
+            svg.appendChild(path);
+
+            // Draw dots at each card position
+            [p0, p1, p2].forEach(pt => {
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', pt.x);
+                circle.setAttribute('cy', pt.y);
+                circle.setAttribute('r', '7');
+                circle.setAttribute('fill', '#c97064');
+                circle.setAttribute('opacity', '0.6');
+                svg.appendChild(circle);
+            });
+
+            // Gold star at treasure
+            const star = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            star.setAttribute('cx', pT.x);
+            star.setAttribute('cy', pT.y);
+            star.setAttribute('r', '9');
+            star.setAttribute('fill', '#d4af37');
+            star.setAttribute('opacity', '0.7');
+            svg.appendChild(star);
+        }
+
+        // Draw on load and resize
+        window.addEventListener('load', () => {
+            setTimeout(drawTreasurePath, 100);
+        });
+        window.addEventListener('resize', drawTreasurePath);
+    </script>
+</body>
+</html>
